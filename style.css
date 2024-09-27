@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* min-width: 100vw; */ 
+    color: white;
+    background-color: rgb(46, 44, 44);
+    background-image: url("./cool-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: 1; */
+
+}
+
+ /* .container::before{
+    width: 100%;
+    height: 100%;
+    background-image: url("./cool-background.png");
+    z-index: 0;
+} */
+
+.weather{   
+    display: flex;
+    align-items:center;
+    /* z-index: 2; */
+    /* justify-content: space-around; */
+}
+
+.weather>div{   
+    margin: 0.51rem;
+}   
+
+.weather1{
+    font-size: 4rem;
+}
+
+.weather p{
+    font-size: 1.25rem;
+}
+
+.weather span{
+    font-size: 0.5 rem;
+    color: rgb(234, 225, 225);
+}
+
+.weather3{
+    display: flex;
+}
+
+nav{
+height: 120px;
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    bottom: 0%;
+    /* The above two properties  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(180, 177, 177, 0.075); */
+    box-shadow: 0 0 25px black;
+    border-radius: 40% 40% 0 0 ;
+    /* border-radius: 100px 100px 0 0 ; */
+
+
+}
+
+nav>form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.searchfield{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-radius: 10px; */
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background: transparent;
+    width: 98%;
+    color: white;
+}
+
+.searchfield::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    /* font-weight: 500; */
+    color: rgba(255, 255, 255, 0.863);
+}
+
+nav>form>button{
+    background-color: rgba(175, 175, 66, 0.655);
+    /* background-color: rgb(255, 195, 100); */
+  /* background-color: rgba(175, 175, 66, 0.779); */
+    border: none;
+    border-radius: 0 25px 25px 0;
+    outline: none;
+    /* text-align: left; */
+    padding-right: 15px;
+    box-sizing: border-box;
+    color: rgb(9, 56, 75);
+    font-weight: 700;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    /* display: flex;
+    align-items: center; */
+}
+
+nav>form>button:hover{
+    background-color: rgb(175, 175, 66);
+    /* background: transparent; */
+}
